@@ -1,6 +1,10 @@
 
-
-
 .chart {
   height: 500px;
+}
+
+.bar {
+	height: 12px;
+	background-color: brown;
+	margin-top: 2px;
 }
