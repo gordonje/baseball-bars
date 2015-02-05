@@ -12,13 +12,18 @@ function getData() {
 }
 
 function drawChart() {
+
+	$('.player-name').text(playerData.name);
+
 	$.each(playerData.stats, function(i, item) {
 
-		console.log(item)
-
-		var width = item.HR;
-
-		$('.chart').append('<div class="bar" style="width: ' + width * 10 + 'px">' + item.HR + '</div>');
+		$('.chart').append(
+			"<div class='col-md-12 bar-container'>" +
+				"<div class='year'>" + item.year + "</div>"+
+				"<div class='bar' style='width: " + item.HR * 10+ "px'></div>"+
+				"<div class='total'>" + item.HR + "</div>"+
+			"</div>"
+			);
 	});
 }
 
