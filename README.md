@@ -1,4 +1,4 @@
-web-app-template-simple
+baseball-bars
 =======================
 
-A simple web app template with jQuery, and Bootstrap.  | Mizzou Workshop - Oct. 2014
+Simple chart of player's career homeruns. Only jquery was used in the making of this chart.
