@@ -17,11 +17,13 @@ function drawChart() {
 
 	$.each(playerData.stats, function(i, item) {
 
+		stat = item.HR 
+
 		$('.chart').append(
 			"<div class='col-md-12 bar-container'>" +
 				"<div class='year'>" + item.year + "</div>"+
-				"<div class='bar' style='width: " + item.HR * 10+ "px'></div>"+
-				"<div class='total'>" + item.HR + "</div>"+
+				"<div class='bar' style='width: " + stat * 10 + "px'></div>"+
+				"<div class='total'>" + stat + "</div>"+
 			"</div>"
 			);
 	});
